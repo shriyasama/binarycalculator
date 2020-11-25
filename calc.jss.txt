@@ -1,0 +1,99 @@
+var a,b,ans,z;
+b="";
+ans=0;
+a=0;
+z=0;
+var d=document.getElementById("display");
+but1.onclick=function(){
+  z+=1;
+display.innerHTML+="1"
+}
+but2.onclick=function(){
+  z+=1;
+display.innerHTML+="2"
+}
+but3.onclick=function(){
+  z+=1;
+display.innerHTML+="3"
+}
+but4.onclick=function(){
+  z+=1;
+display.innerHTML+="4"
+}
+but5.onclick=function(){
+  z+=1;
+display.innerHTML+="5"
+}
+but6.onclick=function(){
+  z+=1;
+display.innerHTML+="6"
+}
+but7.onclick=function(){
+  z+=1;
+display.innerHTML+="7"
+}
+but8.onclick=function(){
+  z+=1;
+display.innerHTML+="8"
+}
+but9.onclick=function(){
+  z+=1;
+display.innerHTML+="9"
+}
+but0.onclick=function(){
+  z+=1;
+display.innerHTML+="0"
+}
+butadd.onclick=function(){
+  ans=0;
+  ans+=parseFloat(display.innerHTML);
+b="+";
+  z=0;
+  a=0;
+  display.innerHTML="";
+}
+butsub.onclick=function(){
+  ans=0;
+  ans+=parseFloat(display.innerHTML);
+  b="-";
+  z=0;a=0;
+display.innerHTML = "";
+}
+butmul.onclick=function(){
+  ans=0;
+  ans+=parseFloat(display.innerHTML);
+  b="*";
+  z=0;
+  a=0;
+display.innerHTML = "";
+}
+butdiv.onclick=function(){
+  ans=0;
+  ans+=parseFloat(display.innerHTML);
+  b="/";
+  z=0;
+  a=0;
+  display.innerHTML = "";
+}
+butac.onclick=function(){
+  a=0;
+  z=0;
+  b="";
+  ans=0;
+display.innerHTML = "";
+}
+buteq.onclick=function(){
+  if(b == "+")
+    {ans+=parseFloat(display.innerHTML);
+    a=0;}
+  if(b == "-")
+    {ans-=parseFloat(display.innerHTML);
+    a=0;}
+  if(b == "*")
+    {ans*=parseFloat(display.innerHTML);
+    a=0;}
+  if(b == "/")
+    {ans/=parseFloat(display.innerHTML);
+    a=0;}
+display.innerHTML = ans
+}
